@@ -7,14 +7,21 @@
 	<title></title>
 </head>
 <style>a{text-decoration: none;}</style>
+
+
+
 <?php
-require_once "class_.php";
+
+
+require_once "classe_center.php";
 
 //istanzio class ma non ho capito ancora l utilizzo del perchè devo passare caratteri dentro
 //visto che li ho dichiarati dentro la class ... capirò
+
 $valore = new contatti("nome1", "nome2", "nome3", "nome4", "nome5", "nome6");
 
-//ottengo il form per le insert e i ltext per il login ... 
+//ottengo il form per le insert e i ltext per il login ... SOLO DOPO IL LOGIN
+
 echo $valore -> form();
 
 

@@ -2,7 +2,7 @@
 session_start();
 error_reporting(0);
 
-include 'class_.php';
+include 'classe_center.php';
 
 
 
@@ -17,15 +17,10 @@ include 'class_.php';
  * QUI CONTROLLI PER le richieste dei contatti veri e propri 
  * */
 
- 
-
+ //NUOVO UTENTE 
+ // se l utente vuole loaggarsi con nuovo nome ....
 // INSERT NUOVI CONTATTI
 if(($_POST['nome']!="")){
-    //    $post=print_r($_POST);
-    //parse_str($post);
-    //echo $azienda;
-    //ISTAN>IO CLASSE PER 
-   
     $perinsert= new contatti();
     $perinsert -> insertdb($_POST);
    
@@ -48,11 +43,7 @@ if(($_POST['nome']!="")){
 
 
 
-
-/*
- * controlli o come si chiamano per gli utenti loggati 
- */
-///QUI CONTROLLO SE ESISTE IL NOME  DAL LOGIN 
+// VEDO SE IL  
 if($_POST ['newclient']!=""){
     $email=htmlspecialchars(trim($_POST['newclient']));
    // $mycooker=$_COOKIE['mycooker'];
