@@ -1,9 +1,0 @@
-<?php
-echo 'ah bello';
-$link = mysql_connect('localhost', 'root', 'new-password');
-$dbsel=mysql_select_db('sql333894_1', $link );
-
-if(!$dbsel){ die('non connesso'.mysql_error() ); }else{echo 'e diae';}
-?>
-
-
